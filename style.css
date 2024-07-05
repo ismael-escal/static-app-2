@@ -1,0 +1,52 @@
+/* CSS Reset */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: "Margarine", sans-serif;
+    background: linear-gradient(
+		rgba(142, 145, 143, 0.81),
+        rgba(142, 145, 143, 0.81)
+	), url('./images/body-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+
+#introduction {
+	background: linear-gradient(
+		rgba(112, 202, 224, 0.25),
+        rgba(112, 202, 224, 0.25)
+	), url('./images/intro-bg.jpg');
+	background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#featured .featured-items {
+	background: rgba(228, 235, 229, 0.31);
+}
+
+#featured a {
+	font-size: 25px;
+	color: black;
+}
+
+.carousel-inner .carousel-item {
+	background: rgba(228, 235, 229, 0.31);
+	color: black;
+}
+
+
+.section {
+    padding: 60px 0;
+}

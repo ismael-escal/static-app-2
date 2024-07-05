@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Making Resource Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Margarine&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Coffee Hub</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#categories-section">Categories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Home Section -->
+<div id="home" class="section text-center">
+    <div id="introduction" class="container-fluid mb-3 py-5">
+    	<div class="row">
+    		<div class="col-md-2"></div>
+    		<div class="col-md-8">
+		        <h1>Welcome to the Coffee Making Resource Hub</h1>
+		        <p>Making coffee is more than just brewing a morning pick-me-up; it's a delightful and engaging experience. The process of making coffee allows you to experiment with different beans, grind sizes, and brewing methods, each yielding unique and tantalizing flavors. The aroma of freshly ground coffee and the satisfaction of crafting the perfect cup can be incredibly rewarding. Whether you're a novice exploring the basics or an enthusiast perfecting your technique, the journey of making coffee is a sensory adventure that brings joy and fulfillment. Dive in and discover the art and fun of coffee making with our comprehensive resources and guides.</p>
+	        </div>
+	        <div class="col-md-2"></div>
+        </div>
+    </div>
+    <div id="featured" class="container mt-4">
+        <h2 class="py-5">Featured Articles</h2>
+        <div class="row d-flex align-items-stretch">
+            <div class="col-md-4 mt-3 py-3 featured-items d-flex flex-column">
+                <a href="https://www.thekitchn.com/best-coffee-brewing-method-22977756" target="_blank">What Coffee-Brewing Method Makes the Best-Tasting Cup?		</a>
+                <p class="my-4 flex-grow-1 text-dark">This article from The Kitchn explores various coffee brewing methods, comparing their flavors and ease of use. It covers methods like the French press, pour over, and Moka pot, offering insights into how each method affects the taste of your coffee.</p>
+                
+            </div>
+            <div class="col-md-4 mt-3 py-3 mx-auto featured-items d-flex flex-column">
+                <a href="https://enjoyjava.com/how-to-make-coffee/" target="_blank">17 Best Coffee Brewing Methods						</a>
+                <p class="my-4 flex-grow-1 text-dark">EnjoyJava provides a comprehensive guide to 17 different coffee brewing methods, including French press, pour over, Chemex, and cold brew. The article details the gear required, the type of coffee each method produces, and step-by-step instructions for each technique.</p>
+            </div>
+            <div class="col-md-4 mt-3 py-3 featured-items d-flex flex-column">
+                <a href="https://www.roastycoffee.com/coffee-types/" target="_blank">The Ultimate Guide to Different Types of Coffee and Coffee Makers</a>
+                <p class="my-4 flex-grow-1 text-dark">Roasty Coffee breaks down various coffee brewing methods and the types of coffee they produce. This guide includes descriptions of espresso machines, AeroPress, and even less common methods like the vacuum pot and Turkish coffee.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Categories Section -->
+<div id="categories-section" class="section text-center">
+    <div id="categories" class="container">
+        <h2>Categories</h2>
+        <p>Explore various categories of coffee making resources.</p>
+        <div id="categoryCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Espresso-Based Drinks</h3>
+                            <p>These include coffee drinks that are made with espresso as the base.</p>
+                            <li>Espresso: A concentrated form of coffee served in small, strong shots.</li>
+                            <li>Cappuccino: Made with equal parts espresso, steamed milk, and milk foam.</li>
+                            <li>Latte: Composed of espresso and steamed milk, topped with a small amount of milk foam.</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#categoryCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#categoryCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    
+    <div id="resources" class="container mt-5">
+        <h2>Sample Resources</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Resource 1</h3>
+                        <p class="card-text">Brief description of the resource.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Resource 2</h3>
+                        <p class="card-text">Brief description of the resource.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Resource 3</h3>
+                        <p class="card-text">Brief description of the resource.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<div id="about" class="section text-center">
+    <div id="mission" class="container">
+        <h2>About Us</h2>
+        <p>Our mission is to educate and inspire coffee enthusiasts around the world.</p>
+    </div>
+    <div id="contact" class="container mt-5">
+        <h2>Contact Us</h2>
+        <p>Email: info@coffeehub.com</p>
+        <p>Phone: +123 456 7890</p>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
