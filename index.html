@@ -71,15 +71,82 @@
         <h2>Categories</h2>
         <p>Explore various categories of coffee making resources.</p>
         <div id="categoryCarousel" class="carousel slide" data-ride="carousel">
+        	<ol class="carousel-indicators">
+			    <li data-target="#categoryCarousel" data-slide-to="0" class="active"></li>
+			    <li data-target="#categoryCarousel" data-slide-to="1"></li>
+			</ol>
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
+                <div class="carousel-item active" data-interval="30000">
+                    <div class="row p-5">
                         <div class="col">
                             <h3>Espresso-Based Drinks</h3>
-                            <p>These include coffee drinks that are made with espresso as the base.</p>
-                            <li>Espresso: A concentrated form of coffee served in small, strong shots.</li>
-                            <li>Cappuccino: Made with equal parts espresso, steamed milk, and milk foam.</li>
-                            <li>Latte: Composed of espresso and steamed milk, topped with a small amount of milk foam.</li>
+                            <p class="pb-5 mb-5">These include coffee drinks that are made with espresso as the base. Espresso is a concentrated form of coffee produced by forcing hot water under high pressure through finely-ground coffee beans</p>
+                        </div>
+                    </div>
+                    <div class="row px-5 pb-4">
+                        <div class="col-md-4">
+                            <div class="card h-100">
+						        <img src="./images/Espresso.jpg" class="card-img-top" alt="...">
+						        <div class="card-body">
+						          	<h5 class="card-title">Espresso</h5>
+						          	<p class="card-text">A concentrated form of coffee served in small, strong shots.</p>
+						        </div>
+						    </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+						        <img src="./images/Cappuccino.jpg" class="card-img-top" alt="...">
+						        <div class="card-body">
+						          	<h5 class="card-title">Cappuccino</h5>
+						          	<p class="card-text">Made with equal parts espresso, steamed milk, and milk foam.</p>
+						        </div>
+						    </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+						        <img src="./images/Latte.jpg" class="card-img-top" alt="...">
+						        <div class="card-body">
+						          	<h5 class="card-title">Latte</h5>
+						          	<p class="card-text">Composed of espresso and steamed milk, topped with a small amount of milk foam.</p>
+						        </div>
+						    </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="30000">
+                    <div class="row p-5">
+                        <div class="col">
+                            <h3>Brewed Coffee</h3>
+                            <p>These are traditional coffee preparations where coffee grounds are brewed with hot water.</p>
+                        </div>
+                    </div>
+                    <div class="row px-5 pb-4">
+                        <div class="col-md-4">
+                            <div class="card h-100">
+						        <img src="./images/drip.jpg" class="card-img-top" alt="...">
+						        <div class="card-body">
+						          	<h5 class="card-title">Drip Coffee</h5>
+						          	<p class="card-text">Made by dripping boiling water over ground coffee, which then passes through a filter.</p>
+						        </div>
+						    </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+						        <img src="./images/french-press.jpg" class="card-img-top" alt="...">
+						        <div class="card-body">
+						          	<h5 class="card-title">French Press</h5>
+						          	<p class="card-text">Coffee grounds are steeped in hot water and then separated by pressing a plunger through a mesh filter.</p>
+						        </div>
+						    </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+						        <img src="./images/pour.jpg" class="card-img-top" alt="...">
+						        <div class="card-body">
+						          	<h5 class="card-title">Pour Over</h5>
+						          	<p class="card-text">Hot water is poured over coffee grounds in a filter, allowing the coffee to drip into a carafe or mug below.</p>
+						        </div>
+						    </div>
                         </div>
                     </div>
                 </div>
@@ -94,31 +161,95 @@
             </a>
         </div>
     </div>
-    
+
     <div id="resources" class="container mt-5">
         <h2>Sample Resources</h2>
+        <h4>Here are some steps you can try at home</h4>
         <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Resource 1</h3>
-                        <p class="card-text">Brief description of the resource.</p>
+            <div class="col-md-12 text-dark">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <b class="text-dark">Classic Black Coffee</b> (Click to show steps)
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <h4 class="pt-4 d-flex text-align-left">Ingredients:</h4>
+                                <ul class="text-left">
+                                    <li class="list-group-item">1 cup of water</li>
+                                    <li class="list-group-item">1-2 tablespoons of ground coffee (depending on desired strength)</li>
+                                </ul>
+                                <h4 class="pt-4 d-flex text-align-left">Steps:</h4>
+                                <ul class="list-group list-group-flush text-left">
+                                    <li class="list-group-item"><b>Boil Water:</b> Bring the water to a boil in a kettle or pot.</li>
+                                    <li class="list-group-item"><b>Add Coffee Grounds:</b> Place the coffee grounds in a coffee maker or a French press.</li>
+                                    <li class="list-group-item"><b>Pour Water:</b> Pour the boiling water over the coffee grounds.</li>
+                                    <li class="list-group-item"><b>Brew:</b> Allow the coffee to brew for 4-5 minutes.</li>
+                                    <li class="list-group-item"><b>Serve:</b> Pour the brewed coffee into a cup and enjoy.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Resource 2</h3>
-                        <p class="card-text">Brief description of the resource.</p>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <b class="text-dark">Cappuccino</b> (Click to show steps)
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <h4 class="pt-4 d-flex text-align-left">Ingredients:</h4>
+                                <ul class="list-group list-group-flush text-left">
+                                    <li class="list-group-item">1 shot of espresso (about 1 ounce)</li>
+                                    <li class="list-group-item">1/2 cup of milk</li>
+                                    <li class="list-group-item">1/4 cup of milk foam</li>
+                                </ul>
+                                <h4 class="pt-4 d-flex text-align-left">Steps:</h4>
+                                <ul class="list-group list-group-flush text-left">
+                                    <li class="list-group-item"><b>Brew Espresso:</b> Use an espresso machine to brew a shot of espresso.</li>
+                                    <li class="list-group-item"><b>Steam Milk:</b> Steam the milk using the steam wand of your espresso machine until it's hot and frothy.</li>
+                                    <li class="list-group-item"><b>Pour Milk:</b> Pour the steamed milk into the cup with the espresso.</li>
+                                    <li class="list-group-item"><b>Add Foam:</b> Spoon the milk foam on top of the steamed milk.</li>
+                                    <li class="list-group-item"><b>Serve:</b> Optionally, sprinkle some cocoa powder or cinnamon on top and enjoy.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Resource 3</h3>
-                        <p class="card-text">Brief description of the resource.</p>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <b class="text-dark">Iced Coffee</b> (Click to show steps)
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <h4 class="pt-4 d-flex text-align-left">Ingredients:</h4>
+                                <ul class="list-group list-group-flush text-left">
+                                    <li class="list-group-item">1 cup of strong brewed coffee (cooled)</li>
+                                    <li class="list-group-item">Ice cubes</li>
+                                    <li class="list-group-item">Milk or cream (optional)</li>
+                                    <li class="list-group-item">Sweetener (optional)</li>
+                                </ul>
+                                <h4 class="pt-4 d-flex text-align-left">Steps:</h4>
+                                <ul class="list-group list-group-flush text-left">
+                                    <li class="list-group-item"><b>Brew Coffee:</b> Brew a strong cup of coffee and let it cool to room temperature.</li>
+                                    <li class="list-group-item"><b>Fill Glass with Ice:</b> Fill a tall glass with ice cubes.</li>
+                                    <li class="list-group-item"><b>Pour Coffee:</b> Pour the cooled coffee over the ice.</li>
+                                    <li class="list-group-item"><b>Add Milk/Cream:</b> Add milk or cream to taste if desired.</li>
+                                    <li class="list-group-item"><b>Sweeten:</b> Add sweetener to taste if desired.</li>
+                                    <li class="list-group-item"><b>Serve:</b> Stir well and enjoy your refreshing iced coffee.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -130,7 +261,7 @@
 <div id="about" class="section text-center">
     <div id="mission" class="container">
         <h2>About Us</h2>
-        <p>Our mission is to educate and inspire coffee enthusiasts around the world.</p>
+        <p>Our mission is to empower coffee enthusiasts of all levels with comprehensive, accessible, and engaging information on coffee brewing techniques. We are dedicated to fostering a community where knowledge about espresso-based drinks and traditional brewed coffee is shared and celebrated. By providing well-researched articles, detailed guides, and practical resources, we aim to enhance your coffee-making journey, inspiring you to explore and appreciate the art and science of creating the perfect cup of coffee.</p>
     </div>
     <div id="contact" class="container mt-5">
         <h2>Contact Us</h2>

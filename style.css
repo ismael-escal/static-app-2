@@ -46,6 +46,25 @@ body {
 	color: black;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    background: rgba(245, 250, 246, 0.31);
+}
+
+.card-body {
+    flex: 1 1 auto;
+}
+
+.card-body li {
+    background: rgba(245, 250, 246, 0.31);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
 
 .section {
     padding: 60px 0;
